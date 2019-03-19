@@ -22,17 +22,33 @@ public class Board {
             {'-', '-', '-'},
     };
 
+    public char[][] getBoard(){
+        return board;
+    }
+
     private Button[][] buttons = new Button[3][3];
+    TicTacToe ticTacToe = new TicTacToe();
 
     private GridPane gridPane;
 
     public Board() {
         generateButton();
         createGridPane();
+        createBtnShowBoard();
     }
 
     public Scene getScene() {
         return new Scene(gridPane, 600, 900, Color.BLACK);
+    }
+
+    private Button createBtnShowBoard() {
+        Button showBoard = new Button();
+        showBoard.setText("Show Board");
+//        showBoard.setBackground(null);
+        showBoard.setPrefHeight(50);
+        showBoard.setPrefWidth(100);
+        showBoard.setOnMouseClicked(a -> ticTacToe.showBoard());
+        return showBoard;
     }
 
     private void createGridPane() {
@@ -47,27 +63,32 @@ public class Board {
 
         Background background = new Background(backgroundImage);
         grid.setBackground(background);
+        grid.add(createBtnShowBoard(), 20,80);
 
         for(int i = 0; i < buttons.length; i++) {
             for(int j = 0; j < buttons.length; j++) {
                 grid.add(buttons[i][j], i * 20, j * 20);
             }
         }
-    }
+
+        gridPane = grid;
+        }
 
     private void generateButton() {
-        for(int i =0; i < board.length; i++) {
-            for(int j = 0; j < board.length; j++) {
+
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
                 Button button = new Button();
                 button.setBackground(null);
                 button.setPrefWidth(200);
-                button.setPrefHeight(20);
+                button.setPrefHeight(200);
                 int tempRow = i;
                 int tempColumn = j;
                 button.setOnMouseClicked(action -> {
-                    if(board[tempRow][tempColumn] == '-') {
+                    if (board[tempRow][tempColumn] == '-') {
                         button.setGraphic(new ImageView(getTurn()));
                         board[tempRow][tempColumn] = lastChar;
+                        System.out.println("tempRow ="+tempRow + " tempCol ="+tempColumn + " lastChar ="+lastChar);
                     } else {
                         System.out.println("Choose another field");
                     }
@@ -78,6 +99,8 @@ public class Board {
         }
     }
 
+
+
     private Image getTurn() {
         if(lastChar == 'x') {
             lastChar = 'o';
@@ -86,8 +109,9 @@ public class Board {
             lastChar = 'x';
             return getCross();
         } else {
-            lastChar = 'o';
+            lastChar = 'x';
             return getCross();
+
         }
     }
 

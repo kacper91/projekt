@@ -1,87 +1,82 @@
 package pl.orlowski;
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class TicTacToe extends Application {
 
     private Image imageback = new Image("plansza.jpg");
-    private boolean turn = false;
 
-    private char mark;
     private int end;
 
     private FlowPane figures = new FlowPane(Orientation.HORIZONTAL);
 
-
-    char[][] plansza = new char[3][3];
+ private char[][] board = new char[3][3];
 
     public void createGame() {
 
-        for (int w = 0; w < plansza.length; w++) {
-            for (int k = 0; k < plansza.length; k++) {
-                plansza[w][k] = '-';
-                System.out.print(plansza[w][k] + "\t");
+        for (int w = 0; w < board.length; w++) {
+            for (int k = 0; k < board.length; k++) {
+                board[w][k] = '-';
+                System.out.print(board[w][k] + "\t");
             }
             System.out.println("\n");
         }
     }
 
     public void showBoard() {
-        for (int w = 0; w < plansza.length; w++) {
-            for (int k = 0; k < plansza.length; k++) {
-                System.out.print(plansza[w][k] + "\t");
+        Board board = new Board();
+
+        for (int w = 0; w < board.getBoard().length; w++) {
+            for (int k = 0; k < board.getBoard().length; k++) {
+                System.out.print(board.getBoard()[w][k] + "\t");
             }
             System.out.println("\n");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
+
     }
 
 
     public int checkHorizontal() { //poziom[w][k]
-        if ((plansza[0][0] == plansza[0][1] && plansza[0][1] == plansza[0][2]) ||
-                (plansza[1][0] == plansza[1][1] && plansza[1][1] == plansza[1][2]) ||
-                (plansza[2][0] == plansza[2][1] && plansza[2][1] == plansza[2][2])) {
+        if ((board[0][0] == board[0][1] && board[0][1] == board[0][2]) ||
+                (board[1][0] == board[1][1] && board[1][1] == board[1][2]) ||
+                (board[2][0] == board[2][1] && board[2][1] == board[2][2])) {
             System.out.println("Wygrales-poziom");
 
         } else {
 
             System.out.println("jednak nie wygrales");
-        }return end = 1;
+        }
+        return end = 1;
     }
 
     public int checkVertical() { //pion
-        if ((plansza[0][0] == plansza[1][0] && plansza[1][0] == plansza[2][0]) ||
-                (plansza[0][1] == plansza[1][1] && plansza[1][1] == plansza[2][1]) ||
-                (plansza[0][2] == plansza[1][2] && plansza[1][2] == plansza[2][2])) {
+        if ((board[0][0] == board[1][0] && board[1][0] == board[2][0]) ||
+                (board[0][1] == board[1][1] && board[1][1] == board[2][1]) ||
+                (board[0][2] == board[1][2] && board[1][2] == board[2][2])) {
 
             System.out.println("Wygrales-pion");
-        }return end = 1;
+        }
+        return end = 1;
 
     }
 
     public int checkCross() { //skos
-        if ((plansza[0][0] == plansza[1][1] && plansza[1][1] == plansza[2][2]) ||
-                (plansza[2][0] == plansza[1][1] && plansza[1][1] == plansza[0][2])) {
+        if ((board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
+                (board[2][0] == board[1][1] && board[1][1] == board[0][2])) {
             System.out.println("Wygrales-skos");
-        }return end =1;
+        }
+        return end = 1;
 
     }
 
-    public void endGame(){
+    public void endGame() {
 
-        if(end==1){
+        if (end == 1) {
             System.out.println("Koniec gry. Wygrałeś");
 
         }
@@ -100,6 +95,7 @@ public class TicTacToe extends Application {
         primaryStage.setTitle("Kolko i Krzyzyk");
         primaryStage.setScene(gameController.startGame());
         primaryStage.show();
+
     }
 
 
