@@ -84,8 +84,10 @@ public class Board {
                 button.setPrefHeight(200);
                 int tempRow = i;
                 int tempColumn = j;
+
                 button.setOnMouseClicked(action -> {
                     if (board[tempRow][tempColumn] == '-') {
+
                         button.setGraphic(new ImageView(getTurn()));
                         board[tempRow][tempColumn] = lastChar;
                         System.out.println("tempRow ="+tempRow + " tempCol ="+tempColumn + " lastChar ="+lastChar);

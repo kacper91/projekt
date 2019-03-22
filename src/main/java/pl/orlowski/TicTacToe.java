@@ -14,18 +14,18 @@ public class TicTacToe extends Application {
 
     private FlowPane figures = new FlowPane(Orientation.HORIZONTAL);
 
- private char[][] board = new char[3][3];
+    //private char[][] board = new char[3][3];
 
-    public void createGame() {
-
-        for (int w = 0; w < board.length; w++) {
-            for (int k = 0; k < board.length; k++) {
-                board[w][k] = '-';
-                System.out.print(board[w][k] + "\t");
-            }
-            System.out.println("\n");
-        }
-    }
+//    public void createGame() {
+//
+//        for (int w = 0; w < board.length; w++) {
+//            for (int k = 0; k < board.length; k++) {
+//                board[w][k] = '-';
+//                System.out.print(board[w][k] + "\t");
+//            }
+//            System.out.println("\n");
+//        }
+//    }
 
     public void showBoard() {
         Board board = new Board();
@@ -41,38 +41,53 @@ public class TicTacToe extends Application {
     }
 
 
-    public int checkHorizontal() { //poziom[w][k]
-        if ((board[0][0] == board[0][1] && board[0][1] == board[0][2]) ||
-                (board[1][0] == board[1][1] && board[1][1] == board[1][2]) ||
-                (board[2][0] == board[2][1] && board[2][1] == board[2][2])) {
-            System.out.println("Wygrales-poziom");
+//    public int checkHorizontal() {//poziom[w][k]
+//
+//        for (int i = 0; i < board.getBoard().length; i++) {
+//            if (i < board.getBoard().length) {
+//                if (
+//                        (board.getBoard()[0][0] == board.getBoard()[0][i] && board.getBoard()[0][i] == board.getBoard()[0][i + 1]) ||
+//                                (board.getBoard()[1][0] == board.getBoard()[1][i] && board.getBoard()[1][i] == board.getBoard()[1][i + 1]
+//
+//            }
+//        }
+//    }
+//
+//}
 
-        } else {
 
-            System.out.println("jednak nie wygrales");
-        }
-        return end = 1;
-    }
-
-    public int checkVertical() { //pion
-        if ((board[0][0] == board[1][0] && board[1][0] == board[2][0]) ||
-                (board[0][1] == board[1][1] && board[1][1] == board[2][1]) ||
-                (board[0][2] == board[1][2] && board[1][2] == board[2][2])) {
-
-            System.out.println("Wygrales-pion");
-        }
-        return end = 1;
-
-    }
-
-    public int checkCross() { //skos
-        if ((board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
-                (board[2][0] == board[1][1] && board[1][1] == board[0][2])) {
-            System.out.println("Wygrales-skos");
-        }
-        return end = 1;
-
-    }
+    
+//        if ((board[0][0] == board[0][1] && board[0][1] == board[0][2]) ||
+//                (board[1][0] == board[1][1] && board[1][1] == board[1][2]) ||
+//                (board[2][0] == board[2][1] && board[2][1] == board[2][2])) {
+//            System.out.println("Wygrales-poziom");
+//
+//        } else {
+//
+//            System.out.println("jednak nie wygrales");
+//        }
+//        return end = 1;
+//    }
+//
+//    public int checkVertical() { //pion
+//        if ((board[0][0] == board[1][0] && board[1][0] == board[2][0]) ||
+//                (board[0][1] == board[1][1] && board[1][1] == board[2][1]) ||
+//                (board[0][2] == board[1][2] && board[1][2] == board[2][2])) {
+//
+//            System.out.println("Wygrales-pion");
+//        }
+//        return end = 1;
+//
+//    }
+//
+//    public int checkCross() { //skos
+//        if ((board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
+//                (board[2][0] == board[1][1] && board[1][1] == board[0][2])) {
+//            System.out.println("Wygrales-skos");
+//        }
+//        return end = 1;
+//
+//    }
 
     public void endGame() {
 
