@@ -2,6 +2,8 @@ package pl.orlowski;
 
 import javafx.application.Application;
 import javafx.geometry.Orientation;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
@@ -9,8 +11,7 @@ import javafx.stage.Stage;
 public class TicTacToe extends Application {
 
     private Image imageback = new Image("plansza.jpg");
-
-    private int end;
+    private Stage primaryStage;
 
     private FlowPane figures = new FlowPane(Orientation.HORIZONTAL);
 
@@ -77,7 +78,6 @@ public class TicTacToe extends Application {
         }
         sum = 0;
 
-
         for (int i = board.length - 1, j = 0; i >= 0; i--, j++) {
 //            System.out.println("i = " + i + " j = " + j);
             sum += board[i][j];
@@ -86,45 +86,50 @@ public class TicTacToe extends Application {
             return true;
         }
         return false;
-
     }
 
     public void checkResult(char[][] board) {
-        if (checkHorizontal(board)) {
-            end = true;
+        if (checkHorizontal(board) || checkVertical(board) || checkX(board)) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+            ButtonType buttonTypeOne = new ButtonType("Exit");
+            ButtonType buttonTypeTwo = new ButtonType("Reset");
+
+            alert.setTitle("Result");
+            alert.setContentText("End of game");
+            alert.getButtonTypes().setAll(buttonTypeOne, buttonTypeTwo);
+            ButtonType buttonType = alert.showAndWait().get();
+
+            if (buttonTypeOne.equals(buttonType)) {
+                System.exit(-1);
+            }
+            if (buttonTypeTwo.equals(buttonType)) {
+                //System.out.println("reset game");
+                startNewGame();
+            }
         }
-
-        if (checkVertical(board)) {
-
-        }
-
-        if (checkX(board)){
-
-        }
-
-
     }
-
 
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
+
     public void start(Stage primaryStage) throws Exception {
 
         GameController gameController = new GameController();
-        Board board = new Board();
+
+        this.primaryStage = primaryStage;
         primaryStage.setTitle("Kolko i Krzyzyk");
         primaryStage.setScene(gameController.startGame());
         primaryStage.show();
-
     }
 
+    public void startNewGame() {
 
+        GameController gameController = new GameController();
+        primaryStage.setScene(gameController.startGame());
+        primaryStage.show();
+    }
 }
-
-
-//przycisk startujacy gre/
-//reset gry
-//alert gdy ktoras z metod sprawdzajacych jest true

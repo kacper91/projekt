@@ -95,6 +95,7 @@ public class Board {
                         button.setGraphic(new ImageView(getTurn()));
                         board[tempRow][tempColumn] = lastChar;
                         System.out.println(tempRow + " - " + tempColumn);
+                        ticTacToe.checkResult(board);
 
                     } else {
                         System.out.println("Choose another field");
