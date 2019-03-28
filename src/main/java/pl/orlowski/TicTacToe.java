@@ -14,89 +14,97 @@ public class TicTacToe extends Application {
 
     private FlowPane figures = new FlowPane(Orientation.HORIZONTAL);
 
-    //private char[][] board = new char[3][3];
+    public void showBoard(char[][] board) {
 
-//    public void createGame() {
-//
-//        for (int w = 0; w < board.length; w++) {
-//            for (int k = 0; k < board.length; k++) {
-//                board[w][k] = '-';
-//                System.out.print(board[w][k] + "\t");
-//            }
-//            System.out.println("\n");
-//        }
-//    }
-
-    public void showBoard() {
-        Board board = new Board();
-
-        for (int w = 0; w < board.getBoard().length; w++) {
-            for (int k = 0; k < board.getBoard().length; k++) {
-                System.out.print(board.getBoard()[w][k] + "\t");
+        for (int w = 0; w < board.length; w++) {
+            for (int k = 0; k < board.length; k++) {
+                System.out.print(board[k][w] + "\t");
             }
             System.out.println("\n");
         }
         System.out.println("\n");
 
+        System.out.println("checkHorizontal: " + checkHorizontal(board));
+        System.out.println("checkX: " + checkX(board));
+        System.out.println("checkVertical: " + checkVertical(board));
+
     }
 
+    public boolean checkVertical(char[][] board) { //pion
 
-//    public int checkHorizontal() {//poziom[w][k]
-//
-//        for (int i = 0; i < board.getBoard().length; i++) {
-//            if (i < board.getBoard().length) {
-//                if (
-//                        (board.getBoard()[0][0] == board.getBoard()[0][i] && board.getBoard()[0][i] == board.getBoard()[0][i + 1]) ||
-//                                (board.getBoard()[1][0] == board.getBoard()[1][i] && board.getBoard()[1][i] == board.getBoard()[1][i + 1]
-//
-//            }
-//        }
-//    }
-//
-//}
+        for (int i = 0; i < board.length; i++) {
+            char sum = 0;
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][j] != '-') {
+                    sum += board[i][j];
+                }
+            }
+            if (sum == (120 * board.length) || sum == (111 * board.length)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkHorizontal(char[][] board) { //poziom
+
+        for (int j = 0; j < board.length; j++) {
+            char sum = 0;
+            for (int i = 0; i < board[j].length; i++) {
+                if (board[i][j] != '-') {
+                    sum += board[i][j];
+                }
+            }
+            if (sum == (120 * board.length) || sum == (111 * board.length)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkX(char[][] board) {
+        // x      0   2,0
+        //    xo       1,1
+        // 0     x    0,2
+
+        char sum = 0;
+        for (int i = 0; i < board.length; i++) {
+            sum += board[i][i];
+        }
+        if (sum == (120 * board.length) || sum == (111 * board.length)) {
+
+            return true;
+        }
+        sum = 0;
 
 
-    
-//        if ((board[0][0] == board[0][1] && board[0][1] == board[0][2]) ||
-//                (board[1][0] == board[1][1] && board[1][1] == board[1][2]) ||
-//                (board[2][0] == board[2][1] && board[2][1] == board[2][2])) {
-//            System.out.println("Wygrales-poziom");
-//
-//        } else {
-//
-//            System.out.println("jednak nie wygrales");
-//        }
-//        return end = 1;
-//    }
-//
-//    public int checkVertical() { //pion
-//        if ((board[0][0] == board[1][0] && board[1][0] == board[2][0]) ||
-//                (board[0][1] == board[1][1] && board[1][1] == board[2][1]) ||
-//                (board[0][2] == board[1][2] && board[1][2] == board[2][2])) {
-//
-//            System.out.println("Wygrales-pion");
-//        }
-//        return end = 1;
-//
-//    }
-//
-//    public int checkCross() { //skos
-//        if ((board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
-//                (board[2][0] == board[1][1] && board[1][1] == board[0][2])) {
-//            System.out.println("Wygrales-skos");
-//        }
-//        return end = 1;
-//
-//    }
+        for (int i = board.length - 1, j = 0; i >= 0; i--, j++) {
+//            System.out.println("i = " + i + " j = " + j);
+            sum += board[i][j];
+        }
+        if (sum == (120 * board.length) || sum == (111 * board.length)) {
+            return true;
+        }
+        return false;
 
-    public void endGame() {
+    }
 
-        if (end == 1) {
-            System.out.println("Koniec gry. Wygrałeś");
+    public void checkResult(char[][] board) {
+        if (checkHorizontal(board)) {
+            end = true;
+        }
+
+        if (checkVertical(board)) {
 
         }
 
+        if (checkX(board)){
+
+        }
+
+
     }
+
 
     public static void main(String[] args) {
         launch(args);
@@ -106,7 +114,7 @@ public class TicTacToe extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         GameController gameController = new GameController();
-
+        Board board = new Board();
         primaryStage.setTitle("Kolko i Krzyzyk");
         primaryStage.setScene(gameController.startGame());
         primaryStage.show();
@@ -115,3 +123,8 @@ public class TicTacToe extends Application {
 
 
 }
+
+
+//przycisk startujacy gre/
+//reset gry
+//alert gdy ktoras z metod sprawdzajacych jest true

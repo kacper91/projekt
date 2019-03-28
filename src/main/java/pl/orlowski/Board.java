@@ -22,6 +22,10 @@ public class Board {
             {'-', '-', '-'},
     };
 
+    public char getLastChar(){
+        return lastChar;
+    }
+
     public char[][] getBoard(){
         return board;
     }
@@ -47,7 +51,7 @@ public class Board {
 //        showBoard.setBackground(null);
         showBoard.setPrefHeight(50);
         showBoard.setPrefWidth(100);
-        showBoard.setOnMouseClicked(a -> ticTacToe.showBoard());
+        showBoard.setOnMouseClicked(a -> ticTacToe.showBoard(board));
         return showBoard;
     }
 
@@ -90,7 +94,8 @@ public class Board {
 
                         button.setGraphic(new ImageView(getTurn()));
                         board[tempRow][tempColumn] = lastChar;
-                        System.out.println("tempRow ="+tempRow + " tempCol ="+tempColumn + " lastChar ="+lastChar);
+                        System.out.println(tempRow + " - " + tempColumn);
+
                     } else {
                         System.out.println("Choose another field");
                     }
