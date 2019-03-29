@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" line="47" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" line="46" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda0d868-1a3d-4c5d-b226-5a86b714b491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/TicTacToe.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,11 +25,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="124">
-              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1074#1075#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-246">
-              <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
+            <state relative-caret-position="440">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3445#3446#0" expanded="true" />
@@ -102,9 +97,9 @@
       <find>start</find>
       <find>temp</find>
       <find>stage</find>
-      <find>getsc</find>
       <find>startNewGame</find>
       <find>primaryStage</find>
+      <find>getsc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,8 +110,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" />
       </list>
     </option>
   </component>
@@ -127,7 +122,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1615" />
@@ -205,7 +200,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553806578709" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553845398691" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -265,16 +260,15 @@
       <workItem from="1553023829122" duration="14961000" />
       <workItem from="1553263597705" duration="1290000" />
       <workItem from="1553769460829" duration="9180000" />
-      <workItem from="1553802976671" duration="3376000" />
+      <workItem from="1553802976671" duration="4327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33120000" />
+    <option name="totallyTimeSpent" value="34071000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18053691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -285,7 +279,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29745042" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29745042" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35977337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -293,7 +287,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26487252" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26487252" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -356,11 +350,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
-          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
+        <state relative-caret-position="440">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3445#3446#0" expanded="true" />
