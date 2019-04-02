@@ -14,7 +14,7 @@ public class Board {
     private Image cross = new Image("krzyzyk.jpg");
     private Image circle = new Image("kolko.jpg");
     private Image imageback = new Image("plansza.jpg");
-    private Image emptyImg = new Image("emptyImg.jpg");
+    private Image emptyImg = new Image("emptyImg.png");
 
     private Button[][] buttons = new Button[3][3];
     private GridPane gridPane;
