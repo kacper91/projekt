@@ -14,15 +14,8 @@ public class TicTacToe extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        GameController guiController = new GameController(new StackPane());
-
-
-        StackPane mainMenu = guiController.getMainMenu();
-        Scene scene = new Scene(mainMenu, 1000, 1000, Color.BLACK);
-
-        primaryStage.setTitle("Kolko i Krzyzyk");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        GameController guiController = new GameController(primaryStage);
+        guiController.startGame(primaryStage);
     }
 
     public void showBoard(char[][] board) {

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bda0d868-1a3d-4c5d-b226-5a86b714b491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/emptyImg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/GameProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/GameProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/orlowski/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/orlowski/TicTacToe.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,12 +33,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="-493">
+              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3785#3786#0" expanded="true" />
-                <element signature="e#3816#3817#0" expanded="true" />
+                <element signature="e#4794#4795#0" expanded="true" />
+                <element signature="e#4825#4826#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="139">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,21 +59,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="139">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Gameplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="306">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,25 +103,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gets</find>
-      <find>b</find>
-      <find>TicTac</find>
-      <find>grid</find>
-      <find>butt</find>
-      <find>generateButton</find>
-      <find>createBtnShowBoard();</find>
-      <find>plansza</find>
-      <find>plansz</find>
-      <find>createGame</find>
-      <find>tic</find>
-      <find>GETsC</find>
-      <find>Board</find>
-      <find>gameCon</find>
       <find>createBtnShowBoard</find>
       <find>mark</find>
       <find>lastChar</find>
-      <find>getTurn</find>
-      <find>board</find>
       <find>gamecon</find>
       <find>primarysta</find>
       <find>start</find>
@@ -112,9 +114,25 @@
       <find>startNewGame</find>
       <find>primaryStage</find>
       <find>getsc</find>
-      <find>showBoard</find>
       <find>TicTacToe</find>
       <find>ImageView</find>
+      <find>startGameButton</find>
+      <find>tictactoe</find>
+      <find>showb</find>
+      <find>checkHorizontal</find>
+      <find>ButtonType buttonType = alert.showAndWait().get();</find>
+      <find>buttonTypeTwo</find>
+      <find>reset</find>
+      <find>alert</find>
+      <find>new boar</find>
+      <find>isend</find>
+      <find>checkResult</find>
+      <find>board</find>
+      <find>showBoard</find>
+      <find>startgame</find>
+      <find>getTurn</find>
+      <find>getTu</find>
+      <find>getTur</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,10 +145,11 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/GUIHelper.java" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.345/GameProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/GUIController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/orlowski/Gameplay.java" />
       </list>
     </option>
   </component>
@@ -142,8 +161,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1615" />
     <option name="height" value="880" />
   </component>
@@ -153,7 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,16 +232,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554227604073" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555436656538" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeWars-exercise" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27471265" />
@@ -284,18 +304,23 @@
       <workItem from="1554140631204" duration="653000" />
       <workItem from="1554143360878" duration="2005000" />
       <workItem from="1554224204850" duration="1831000" />
-      <workItem from="1554226066297" duration="1483000" />
+      <workItem from="1554226066297" duration="3990000" />
+      <workItem from="1554911068657" duration="1412000" />
+      <workItem from="1554932121758" duration="599000" />
+      <workItem from="1554995160907" duration="3687000" />
+      <workItem from="1555274214875" duration="1226000" />
+      <workItem from="1555435196545" duration="1459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40575000" />
+    <option name="totallyTimeSpent" value="51465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18791947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13825503" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -427,45 +452,21 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.513/GUIController.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.779/GameController.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.256/Board.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.777/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="37" column="42" lean-forward="true" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.336/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" lean-forward="true" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.049/GameProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="63" lean-forward="true" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.850/TicTacTone2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" lean-forward="true" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.777/Board.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.336/GameController.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.049/GameProcessor.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.850/TicTacTone2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GUIController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/empty.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/emptyImg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/empty.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/emptyImg.jpg" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.348/src/main/java/pl/orlowski/ryndak/TicTacTone2.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.151/src/main/java/pl/orlowski/ryndak/GameController.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.745/src/main/java/pl/orlowski/ryndak/Board.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.609/src/main/java/pl/orlowski/ryndak/Board.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,31 +475,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="139">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/GameProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="-493">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3785#3786#0" expanded="true" />
-            <element signature="e#3816#3817#0" expanded="true" />
+            <element signature="e#4794#4795#0" expanded="true" />
+            <element signature="e#4825#4826#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/TicTacToe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/orlowski/Gameplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,11 +1,12 @@
 package pl.orlowski;
-
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
+import javafx.stage.Stage;
 
 import java.util.Arrays;
 
@@ -14,10 +15,9 @@ public class Board {
     private Image cross = new Image("krzyzyk.jpg");
     private Image circle = new Image("kolko.jpg");
     private Image imageback = new Image("plansza.jpg");
-    private Image emptyImg = new Image("emptyImg.png");
-
     private Button[][] buttons = new Button[3][3];
     private GridPane gridPane;
+  private Stage stage;
     private char[][] board = new char[][]{
             {'-', '-', '-'},
             {'-', '-', '-'},
@@ -26,7 +26,9 @@ public class Board {
 
     private char lastChar = '-';
 
-    public Board() {
+
+    public Board(Stage stage) {
+    this.stage = stage;
         generateButton();
         createGridPane();
     }
@@ -38,7 +40,7 @@ public class Board {
                 button.setBackground(null);
                 button.setPrefWidth(200);
                 button.setPrefHeight(200);
-                button.setGraphic(new ImageView(emptyImg)); // tutaj pusty obrazek
+                button.setGraphic(new ImageView()); // tutaj pusty obrazek
                 int tempRow = i;
                 int tempColumn = j;
 
@@ -47,10 +49,19 @@ public class Board {
 
                         button.setGraphic(new ImageView(getTurn()));
                         board[tempRow][tempColumn] = lastChar;
-                        System.out.println(tempRow + " - " + tempColumn);
+                      //  System.out.println(tempRow + " - " + tempColumn);
                         boolean isEnd = GameProcessor.checkResult(board);
                         if (isEnd) {
-                            clearBoard();
+                            System.out.println( "Restarting app!" );
+                            stage.close();
+                            Platform.runLater( () -> {
+                                try {
+                                    new TicTacToe().start( new Stage() );
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            });
+
                         }
                     } else {
                         System.out.println("Choose another field");
@@ -104,12 +115,28 @@ public class Board {
 //        showBoard.setBackground(null);
         showBoard.setPrefHeight(50);
         showBoard.setPrefWidth(100);
-//        showBoard.setOnMouseClicked(a -> ticTacToe.showBoard(board));
+        showBoard.setOnMouseClicked(a -> showBoard(board));
         return showBoard;
     }
 
+    private void showBoard(char[][] board) {
+
+        for (int w = 0; w < board.length; w++) {
+            for (int k = 0; k < board.length; k++) {
+                System.out.print(board[k][w] + "\t");
+            }
+            System.out.println("\n");
+        }
+        System.out.println("\n");
+
+//        System.out.println("checkHorizontal: " + GameProcessor.checkResult(board));
+//        System.out.println("checkX: " + GameProcessor.checkX(board));
+//        System.out.println("checkVertical: " + GameProcessor.checkVertical(board));
+
+    }
+
     public void clearBoard() {
-        buttons = new Button[3][];
+        buttons = new Button[3][3];
         board = new char[][]{
                 {'-', '-', '-'},
                 {'-', '-', '-'},

@@ -27,7 +27,8 @@ public class GameProcessor {
         return false;
     }
 
-    private static boolean checkVertical(char[][] board) { //pion
+
+    public static boolean checkVertical(char[][] board) { //pion
 
         for (int i = 0; i < board.length; i++) {
             char sum = 0;
@@ -43,7 +44,7 @@ public class GameProcessor {
         return false;
     }
 
-    private static boolean checkHorizontal(char[][] board) { //poziom
+    public static boolean checkHorizontal(char[][] board) { //poziom
 
         for (int j = 0; j < board.length; j++) {
             char sum = 0;
@@ -59,10 +60,8 @@ public class GameProcessor {
         return false;
     }
 
-    private static boolean checkX(char[][] board) {
-        // x      0   2,0
-        //    xo       1,1
-        // 0     x    0,2
+    public static boolean checkX(char[][] board) {
+
 
         char sum = 0;
         for (int i = 0; i < board.length; i++) {
